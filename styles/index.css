@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Prompt:wght@200&display=swap');
+
+:root {
+--heading-font: 'Kanit', sans-serif;
+--paragraph-font: 'Prompt', sans-serif;
+}
+
+body {
+    background-color: #C8C8C8;
+    font-family: 'Prompt', sans-serif;
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-white);
+    font-size: 22px;    
+}
+
+
+#allin {
+    width: auto;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav {
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#main-p {
+    width: 100%;
+    box-shadow: 0px 0px 15px #6f7364;
+}
+
+header {
+    background-color: #DC965A; 
+    margin-bottom: 50px;
+}
+
+.cl {
+    grid-column: 1;
+    text-align: center;
+    margin-left: 84px;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.md {
+    grid-column: 3;
+    text-align: center;
+    margin-right: 72px;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.logo {
+    width: 150px;
+    grid-column: 2;
+    text-align: center;
+    box-shadow: 0px 0px 15px #6f7364;
+}
+
+.logo_link {
+    grid-column: 2;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+
+h2, h1 {
+  text-align: center;
+}
+
+footer {
+    background-color: #BBB891; 
+    color: #74B3CE;
+    font-size: 1.2em;
+    padding: 25px 50px; 
+    margin-top: 200px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.minilogo {
+    width: 100px; 
+    margin-right: 50px; 
+    box-shadow: 0px 0px 15px #6f7364;
+}
+
+#texttext {
+    color: #242325;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: center;
+    font-weight: 600;
+}
+
+#texttext p {
+    margin: 5px 0; 
+}
+
+main.adds {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+#clas1 {
+    grid-column: 2/7;
+    grid-row: 5/8;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+#clas1, #clas2 {
+    width: 500%;
+}
+
+#background1 {
+    height: 725px;
+    text-align: center;
+    background-color: #508991;
+    grid-column: 1/11;
+    grid-row: 4/9;
+} 
+
+#clas1 {
+    grid-column: 2/7;
+    grid-row: 5/8;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+

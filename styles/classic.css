@@ -52,7 +52,7 @@ header {
     grid-column: 1;
     text-align: center;
     margin-left: 84px;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 40px;
 }
 
@@ -60,7 +60,7 @@ header {
     grid-column: 3;
     text-align: center;
     margin-right: 72px;
-    font-weight:600;
+    font-weight: 500;
     font-size: 40px;
 }
 

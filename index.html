@@ -19,8 +19,61 @@
         </header>
         <div id=mainy>
             <div id=mainp>
+                <script>
+                    let slideIndex = 1;
+                    showSlides(slideIndex);
+            
+                    // Next/previous controls
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+            
+                    // Thumbnail image controls
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+            
+                    function showSlides(n) {
+                        let i;
+                        let slides = document.getElementsByClassName("mySlides");
+                        let dots = document.getElementsByClassName("dot");
+                        if (n > slides.length) {slideIndex = 1}
+                        if (n < 1) {slideIndex = slides.length}
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex-1].style.display = "block";
+                        dots[slideIndex-1].className += " active";
+                    }
+                </script>
                 <h1>A particular place to learn more about vehicles</h1>
-                <img id="main-p" src="images/Main.jpg" alt="one">
+                <div class="slideshow-container">
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                    <div class="numbertext">1 / 2</div>
+                    <img src="images/Main.jpg" style="width:100%">
+                    <div class="text">A Sport Car</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">2 / 2</div>
+                    <img src="images/Main2.jpg" style="width:100%">
+                    <div class="text">City lighted by vehicles</div>
+                    </div>
+                
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+                  <br>
+                  
+                  <!-- The dots/circles -->
+                  <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
                 <p>The four essential components of an automobile are the chassis, the engine, the transmission system, and the body. Without these, an automobile would not be able to work or function at all.</p>
 
                 <h3>Chassis</h3>
